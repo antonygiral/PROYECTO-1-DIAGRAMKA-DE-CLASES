@@ -1,0 +1,56 @@
+Entidades Principales:
+
+Entidad Bancaria:
+
+Atributos: código, domicilio Central
+Relaciones: sucursales
+
+Sucursal:
+
+Atributos: código, domicilio, número Empleados
+Relaciones: entidadBancaria, vigilantes, detenciones
+
+Vigilante Jurado:
+
+Atributos: código, edad, contratado ConArma, fecha Contratación
+Relaciones: sucursales, detenciones (solo como detenido)
+
+Persona Detenida:
+
+Atributos: clave (código), nombre Completo
+Relaciones: bandas, detenciones, juzgados
+
+Banda Organizada:
+
+Atributos: número Banda, número Miembros
+Relaciones: personas Detenidas
+
+Juez:
+
+Atributos: clave Juzgado, nombre, años Servicio
+Relaciones: detenciones (como juez)
+
+Entidades de Relación:
+
+Atraco:
+
+Atributos: fecha Atraco
+Relaciones: sucursal, persona Detenida
+
+JuezAtraco:
+
+Atributos: condena, tiempo Cárcel
+Relaciones: juez, atraco, persona Detenida
+
+Descripción de Relaciones:
+
+Cada Entidad Bancaria tiene varias Sucursales.
+Cada Sucursal pertenece a una única Entidad Bancaria.
+Cada Sucursal puede tener varios Vigilantes Jurados contratados en diferentes fechas.
+Un Vigilante Jurado puede ser contratado por varias Sucursales.
+Cada Persona Detenida puede ser miembro de varias Bandas Organizadas.
+Cada Persona Detenida puede ser arrestada por varios Atracos.
+Un Atraco puede tener varias Personas Detenidas.
+Cada Atraco está relacionado con una Sucursal.
+Un Juez puede estar a cargo de varios JuezAtraco.
+Cada JuezAtraco está relacionado con una Persona Detenida.

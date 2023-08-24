@@ -1,6 +1,6 @@
 Clase: Especie
 
-Atributos: nombreEspanol, nombre Cientifico, descripcion
+Atributos: nombre Espanol, nombre Cientifico, descripcion
 Relaciones: habitats, zona
 
 Clase: Habitat
@@ -15,7 +15,7 @@ Relaciones: especies, habitats
 
 Clase: Itinerario
 
-Atributos: codigo, duracion, longitud, maxVisitantes, num Especies Visitadas
+Atributos: codigo, duracion, longitud, max Visitantes, num Especies Visitadas
 Relaciones: zonas, guias
 
 Clase: Empleado

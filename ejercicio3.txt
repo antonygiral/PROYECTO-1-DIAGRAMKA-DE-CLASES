@@ -1,0 +1,40 @@
+Entidades Principales:
+
+Sucursal:
+
+Atributos: código Sucursal, dirección, teléfono
+Relaciones: turistas
+
+Hotel:
+
+Atributos: código Hotel, nombre, dirección, ciudad, teléfono, plazas Disponibles
+Relaciones: turistas
+
+Vuelo:
+
+Atributos: número Vuelo, fecha Hora, origen, destino, plazas Totales, plazas Turista Disponibles
+Relaciones: turistas
+
+Turista:
+
+Atributos: código Turista, nombre, apellidos, dirección, teléfono
+Relaciones: sucursal, vuelo, hotel
+Entidades de Relación:
+
+Reserva Vuelo:
+
+Atributos: turista, vuelo, clase (turista o primera)
+Relaciones: (Relación entre Turista y Vuelo)
+
+Reserva Hotel:
+
+Atributos: turista, hotel, régimen (media pensión o pensión completa), fechaLlegada, fechaPartida
+Relaciones: (Relación entre Turista y Hotel)
+
+Descripción de Relaciones:
+
+Cada turista está relacionado con una sucursal que ha contratado.
+Un turista puede tener múltiples reservas de vuelos en diferentes clases.
+Un turista puede tener múltiples reservas de hoteles en diferentes régimenes.
+Cada vuelo está relacionado con varios turistas que lo han contratado.
+Cada hotel está relacionado con varios turistas que lo han contratado.
