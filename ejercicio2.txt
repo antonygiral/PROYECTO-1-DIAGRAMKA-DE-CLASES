@@ -1,0 +1,36 @@
+Clase: Especie
+
+Atributos: nombreEspanol, nombre Cientifico, descripcion
+Relaciones: habitats, zona
+
+Clase: Habitat
+
+Atributos: nombre, clima, vegetacion, continentes
+Relaciones: especies
+
+Clase: Zona
+
+Atributos: nombre, extension
+Relaciones: especies, habitats
+
+Clase: Itinerario
+
+Atributos: codigo, duracion, longitud, maxVisitantes, num Especies Visitadas
+Relaciones: zonas, guias
+
+Clase: Empleado
+
+Atributos: tipo (Cuidador o Guía), nombre, direccion, telefono
+Relaciones: itinerarios (para guías), especiesACargo (para cuidadores)
+
+Clase: Cuidador extends Empleado
+
+Atributos heredados: tipo, nombre, direccion, telefono
+Atributos adicionales: fechaIngreso
+Relaciones: especiesACargo
+
+Clase: Guia extends Empleado
+
+Atributos heredados: tipo, nombre, direccion, telefono
+Atributos adicionales: fechaInicio
+Relaciones: itinerarios

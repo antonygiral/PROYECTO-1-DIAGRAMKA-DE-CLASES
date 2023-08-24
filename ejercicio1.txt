@@ -1,0 +1,24 @@
+Clase: Agencia
+
+Atributos: (No se especificaron atributos específicos)
+Relaciones: itinerarios, garajes
+
+Clase: Garaje
+
+Atributos: (No se especificaron atributos específicos)
+Relaciones: coches, agencia (Agencia)
+
+Clase: Cliente
+
+Atributos: dni, nombre, direccion, telefono, codigoUnico
+Relaciones: reservas, avaladoPor (Cliente)
+
+Clase: Reserva
+
+Atributos: fechaInicio, fechaFinal, precioTotal, entregado
+Relaciones: cliente (Cliente), coches, agencia (Agencia)
+
+Clase: Coche
+
+Atributos: matricula, modelo, color, marca
+Relaciones: garaje (Garaje)
