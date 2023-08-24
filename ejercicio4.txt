@@ -1,0 +1,35 @@
+Entidades Principales:
+
+Soldado:
+
+Atributos: código Soldado (único), nombre, apellidos, graduación
+Relaciones: cuerpo, compañía, servicios
+
+Cuartel:
+
+Atributos: código Cuartel, nombre, ubicación
+Relaciones: compañías
+
+Cuerpo:
+
+Atributos: código Cuerpo, denominación
+Relaciones: soldados
+
+Compañía:
+
+Atributos: número Compañía, actividad Principal
+Relaciones: soldados, cuarteles
+
+Entidades de Relación:
+
+Servicio:
+Atributos: código Servicio, descripción, fecha Realización
+Relaciones: soldados
+
+Descripción de Relaciones:
+
+Cada Soldado pertenece a un único Cuerpo y a una única Compañía.
+Un Soldado puede realizar varios Servicios a lo largo del servicio militar.
+Un mismo Servicio puede ser realizado por más de un Soldado.
+Un Cuartel puede tener varias Compañías, y una Compañía puede estar en varios Cuarteles.
+Un Soldado está destinado en un único Cuartel.
